@@ -8,51 +8,65 @@
     <link rel="stylesheet" href="project 3.css" />
   </head>
   <body>
-    <div id="container">
-      <div id="item2">
-        <div><h1>facebook</h1></div>
-        <div>
-          <p>
-            Facebook helps you connect and share with the people in your life.
-          </p>
+    <div id="maindiv">
+      <div id="container1">
+        <div id="item2">
+          <div><h1>facebook</h1></div>
+          <div>
+            <p id="firstparagraph">
+              Facebook helps you connect and share <br />
+              with the people in your life.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div id="container">
-      <div id="item">
-        <div>
-          <input
-            type="text"
-            id="email"
-            placeholder="Email, address or phone number"
-            required
-          />
+
+      <div id="newcontainer">
+        <div id="container2">
+          <div>
+            <input
+              type="text"
+              id="email"
+              placeholder="Email, address or phone number"
+              required
+              class="myinput"
+            />
+          </div>
+          <br />
+          <div>
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              required
+              class="myinput"
+            />
+          </div>
+          <br />
+          <div>
+            <a href="https://facebook.com"
+              ><button id="button"><b>Log In</b></button></a
+            >
+          </div>
+          <br />
+          <div>
+            <a href="https://facebook.com" class="Forgottenpassword"
+              ><span class="Forgottenpassword">Forgotten password?</span></a
+            >
+          </div>
+          <br />
+          <hr size="1px" width="90%;" id="hr" />
+          <div>
+            <a href="https://facebook.com"
+              ><button id="cn-acc"><b>Create New Account</b></button></a
+            >
+          </div>
         </div>
-        <br />
         <div>
-          <input
-            type="password"
-            id="password"
-            placeholder="Password"
-            required
-          />
-        </div>
-        <br />
-        <div>
-          <a href="https://facebook.com"
-            ><button id="button"><b>Log In</b></button></a
-          >
-        </div>
-        <br />
-        <div>
-          <a href="https://facebook.com"><span>Forgotten password?</span></a>
-        </div>
-        <br />
-        <hr size="1px" width="90%;" />
-        <div>
-          <a href="https://facebook.com"
-            ><button id="cn-acc"><b>Create New Account</b></button></a
-          >
+          <p id="secondparagraph">
+            <a href="https://facebook.com"><strong>Create a Page</strong></a>
+            for a celebrity, brand or business.
+          </p>
         </div>
       </div>
     </div>

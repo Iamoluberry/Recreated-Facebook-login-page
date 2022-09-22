@@ -1,105 +1,106 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-body{
-    background-color: rgb(228, 228, 231);
-    
-}
-#container{
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
 
+body{
     display: flex;
+    justify-content: center;
+    justify-items: space-around;
+    min-height: 100vh;
+    flex-flow: column wrap;
+    background-color: rgb(228, 228, 231);
+}
+
+#maindiv{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between; 
-    flex-shrink: 4;
+    gap: 50px;
 }
-#item2{
-    position: absolute;
-    margin-left: 20vw;
-    margin-bottom: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;    
-    max-width: 320px;
-    min-width: 80px;
-    max-height: 160px;
-    min-height: 100px;
-    flex-shrink: 4;
-    flex-grow: 0;
-    flex-basis: 0;
-}
+
+
+
 h1{
     margin: 0%;
-    font-size: 50px;
+    font-size: 70px;
     font-family: Helvetica, sans-serif;
-    color: rgb(106, 106, 241);
+    color: rgb(65, 110, 201);
+    cursor: default;
+    padding-bottom: 0px;
 }
-p{
+#firstparagraph{
     margin: 0%;
     padding-top: 10px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
-#item{
-    position: absolute;
-    background-color: white;
-    border: 0px solid ;
-    border-radius: 5px;
-    /* width: 20rem; */
-    max-width: 720px;
-    min-width: 100px;
-    /* height: 17rem; */
-    max-height: 272px;
-    min-height: max-content;
-    box-shadow: 2px 2px 4px  rgba(141, 121, 121, 0.5), -2px -2px 4px rgba(141, 121, 121, 0.5);
 
-margin-left: 55vw;
-margin-bottom: 5rem;
-display: flex;
-flex-direction: column;
+#newcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: center; 
-    flex-shrink: 4;
-    flex-grow: 0;
-    flex-grow: 0;
+    gap: 10px;
 }
-#email, #password{
-    padding-left: 10px;
-}
-#email, #password, #button{
-    width: 18rem;
-    height: 30px;
-    border: 1px solid rgb(131, 123, 123);
+
+#container2{
+    background-color: rgb(240, 240, 240);
     border-radius: 5px;
-    cursor: pointer;
+    box-shadow: 2px 2px 3px rgba(190, 184, 184, 0.8),
+                -2px -2px 3px rgba(190, 184, 184, 0.8);
+   width: 400px;
+   height: 55vh;
+   position: relative;
+
+   display: flex;
+   flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
-#button{
-    color: white;
-    background-color: rgb(106, 106, 241);
+
+.myinput, #button{
+    
+    width: 380px;
+    padding: 18px;
+    border-radius: 6px;
+    outline: none;
+}
+.myinput{
+    border: 1px solid rgba(10, 10, 10, 0.2);    
     
 }
-#email:hover, #password:hover{
-    box-shadow: 5px blue;
-    border: 2px solid blue;
+#button{
+    background-color: rgb(66 103 178);
+    border: none;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
 }
 
-a:hover{
-color: rgb(17, 28, 192);
+.myinput:focus{
+    border: 1px solid blue;
 }
-/* a:visited{
-    color: red;
-} */
-#cn-acc{
-    color: white;
-    font-size: 15px;
-    background-color: rgb(100, 211, 100);
-    width: 12rem;
-    height: 30px;
-    border: 1px solid rgb(28, 199, 79);
-    border-radius: 5px;
-    font-size: 15px;
+.Forgottenpassword{
+    color: blue;
+    text-decoration: none;
+    font-size: 1em;
     cursor: pointer;
+}
+#cn-acc{
+    background-color: rgb(119, 223, 119);
+    border: none;
+    width: 200px;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+}
+
+#secondparagraph, a{
+    text-decoration: none;
+    color: black;
 }
